@@ -1,0 +1,9 @@
+[Unit]
+Description=Run the Stockwave nightly job after the US market close
+
+[Timer]
+OnCalendar=Mon..Fri 19:45
+Persistent=true
+
+[Install]
+WantedBy=timers.target
